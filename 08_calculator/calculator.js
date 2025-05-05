@@ -12,12 +12,18 @@ const sum = function(array) {
   array.forEach(element => {
     sum += element;
   });
-  
+
 	return sum;
 };
 
-const multiply = function() {
+const multiply = function(array) {
+  let product = 1;
+  
+  array.forEach(element => {
+    product *= element;
+  });
 
+  return product;
 };
 
 const power = function() {
