@@ -3,8 +3,10 @@ let sum = 0;
 let smaller;
 let bigger;
 
-if (num1 < 0 || num2 < 0) {
-    sum = "ERROR"
+if (num1 < 0 || num2 < 0 || typeof num1 !== "number" || typeof num2 !== "number" || 
+    !Number.isInteger(num1) || !Number.isInteger(num2)) {
+
+    sum = "ERROR";
 } else {
     if (num1 < num2) {
         smaller = num1;
