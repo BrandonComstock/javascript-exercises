@@ -5,9 +5,9 @@ const findTheOldest = function(people) {
         let age2 = personCurrent.yearOfDeath - personCurrent.yearOfBirth;
         
         if (age1 > age2) {
-            return age1;
+            return personAccumulator;
         } else {
-            return age2;
+            return personCurrent;
         }
     };
 
